@@ -38,3 +38,7 @@ while not is_game_over:
             user_cards.append(deal_card())
         else:
             is_game_over = True
+'''if computer score is < 17 or if computer isnt blackjack(0)they have to keep drawing'''
+while computer_score !=0 or computer_score < 17: 
+    computer_cards.append(deal_card())
+    computer_score = calculate_score(computer_cards)
